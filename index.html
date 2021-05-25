@@ -4,14 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
 <title>Keywordio Test</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
-   
    <header>
       <div class="container">
          <div class="float-left">
@@ -33,7 +30,7 @@
       <div class="container">
          <div class="main_top">
             <div class="row">
-               <div class="col-12 col-md-8">
+               <div class="col-12 col-md-12 col-lg-8">
                   <div class="cost_sec">
                      <ul>
                         <li>Daily cost : <b>SEK 1,000</b></li>
@@ -41,13 +38,11 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-12 col-md-4">
+               <div class="col-12 col-md-12 col-lg-4">
                   <div class="select_sec">
                      <div class="select_box ads">
                         <select>
                            <option>Google Ads</option>
-                           <option>Facebook</option>
-                           <option>Twitter</option>
                         </select>
                      </div>
                      <div class="select_box">
@@ -56,14 +51,14 @@
                            <option>1 - 10</option>
                            <option>10 - 20</option>
                         </select>
-                      </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
          <div class="main_mid">
             <div class="row">
-               <div class="col-12 col-md-8">
+               <div class="col-12 col-md-12 col-lg-8">
                   <div class="row">
                      <div class="col-12 col-md-6">
                         <div class="main_card">
@@ -99,17 +94,24 @@
                      </div>
                   </div>
                </div>
-               <div class="col-12 col-md-4">
+               <div class="col-12 col-md-12 col-lg-4">
                   <div class="performs_sec">
                      <h1>Top 3 performing Ads/ URLs</h1>
                      <p>(Based on most conversions/ Clicks)</p>
                      <ul class="list">
                         <li>Nike Air | Sports Shoes | Summer Sale</li>
                         <li>Nike sport | Sports Shoes female | Summer Sale</li>
-                        <li>Nike Air Max  | Men's Shoes | Summer Sale</li>
+                        <li>Nike Air Max | Men's Shoes | Summer Sale</li>
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+         <div class="chart">
+            <h2>Conversion summary</h2>
+            <div class="chart_sec">
+               <h3>Last 30 days</h3>
+               <div id="chart"></div>
             </div>
          </div>
          <div class="social_btn">
@@ -119,6 +121,8 @@
          </div>
       </div>
    </div>
-   
+
+<script src="js/apexcharts.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

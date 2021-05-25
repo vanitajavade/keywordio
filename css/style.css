@@ -1,23 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: normal;
-  font-weight: 400;
-  color: #313131;
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
-  background: #f9f9f9;
-}
-
-img {
-  border: none;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  transition: all 0.5s ease-in-out 0s;
-}
+body{ margin: 0;padding: 0;font-size: 16px;line-height: normal;font-weight: 400;color: #313131;font-family: 'Montserrat', sans-serif;overflow-x: hidden;background: #f9f9f9;}
+img {border: none;height: auto;max-width: 100%;vertical-align: middle;transition: all 0.5s ease-in-out 0s;}
 ul{list-style: none; margin: 0; padding: 0;}
 h1, h2, h3, h4, h5, h6, p{margin: 0; padding: 0;}
 a:hover{color:inherit; text-decoration:none;}
@@ -28,50 +11,116 @@ header ul li{display: inline-block;}
 header ul li:not(:last-child)::after{content: "|"; font-size: 25px; color:#fff; margin:0 10px; position: relative; top:-2px;}
 
 .main{width:100%; float: left; padding: 50px 0;}
-.cost_sec{width:90%; background: #fff;}
-.cost_sec ul{display: flex; justify-content: space-between; padding: 10px 30px;}
-.cost_sec ul li{font-size: 20px;}
+.cost_sec{width:90%; background: #fff; border-radius:5px;}
+.cost_sec ul{display: flex; justify-content: space-between; padding:18px 40px;}
+.cost_sec ul li{font-size:20px;}
 .cost_sec ul li b{color:#1A8FF0; font-weight:600; margin-left: 20px;}
 
-.main_mid{width:100%; float: left; margin:40px 0;}
-.main_mid .main_card{background-color: #fff; position: relative; padding: 30px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 0 8px rgb(0 0 0 / 10%);}
-.main_mid .main_card h6{font-size: 26px; font-weight:600; color:#3D4955;}
-.main_mid .main_card h3{font-size: 40px; font-weight:bold; color:#1A8FF0; margin:5px 0;}
+.main_mid{width:100%; float: left; margin:40px 0 20px;}
+.main_mid .main_card{background-color: #fff; position: relative; padding:30px 40px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 0 8px rgb(0 0 0 / 10%);}
+.main_mid .main_card h6{font-size: 26px; font-weight:600; color:#3D4955; padding-right: 45px;}
+.main_mid .main_card h3{font-size: 40px; font-weight:700; color:#1A8FF0; margin:5px 0;}
 .main_mid .main_card p{font-size: 22px; font-weight: 500;}
 .main_mid .main_card p span.green{font-weight: 600; color:#15AC1A;}
 .main_mid .main_card p span.red{font-weight: 600; color:#FF6B3D;}
-.main_card .icon{font-size:26px; position: absolute; right:30px;}
+.main_card .icon{font-size:26px; position: absolute; right:40px;}
 .main_card .icon.green{color:#08AC44;}
 .main_card .icon.red{color:#FF6B3D;}
 .main_card .icon.orange{color:#FBB03B;}
 .performs_sec h1{font-size: 30px; font-weight: 700;}
-.performs_sec p{font-size: 20px; margin:10px 0 30px;}
+.performs_sec p{font-size: 20px; margin:12px 0 25px;}
 .performs_sec .list{background-color: #fff; padding: 30px; border-radius: 5px; box-shadow: 0 0 8px rgb(0 0 0 / 10%);}
-.performs_sec .list li{font-size: 20px; counter-increment: step; position: relative; font-weight: 500; padding:0 0 20px 60px;}
+.performs_sec .list li{font-size: 20px; counter-increment: step; position: relative; font-weight: 500; padding:0 0 47px 70px; color:#3D4955;}
 .performs_sec .list li:before{content: counter(step); color:#1A8FF0; font-size:20px; font-weight: 500; width:40px; 
-  height: 40px; line-height: 38px; border-radius: 50%; background: #E7F3FB; position: absolute; left:0; text-align: center;}
-.performs_sec .list li:last-child{margin-bottom:0;}
+  height: 40px; line-height: 38px; border-radius: 50%; top:-5px; background: #E7F3FB; position: absolute; left:0; text-align: center;}
+.performs_sec .list li:last-child{padding-bottom:0;}
 
-.social_btn {
-  width: 100%;
-  float: left;
-  text-align: center;
-}
-.social_btn a{width: 300px;
-  line-height: 80px;
-  display: inline-block;
-  border: 2px solid #3B5998;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #3B5998; margin:0 7px;}
+.social_btn{width: 100%;float: left;text-align: center;}
+.social_btn a{width: 300px;line-height:77px;display: inline-block;border: 2px solid #3B5998;border-radius: 8px;font-size: 20px;font-weight: 500;color: #3B5998; margin:0 7px;}
 .social_btn a img{margin-right: 12px; position: relative; top: -2px;}
 .social_btn a.slack_btn{border-color:#C7CACD; color:#000000;}
 .social_btn a.know_btn{border-color:#1A8FF0; color:#1A8FF0;}
 
 .select_sec .select_box{width:220px; float: right;}
-.select_sec select{height:42px; width:100%; border:1px solid #C1C1C1; border-radius: 5px; padding: 0 20px; -webkit-appearance: none; -moz-appearance:none; appearance:none; background-image: url(../images/down-arrow.png); background-repeat: no-repeat; background-position: 90% center;}
+.select_sec select{height:42px; width:100%; border:1px solid #efefef; border-radius: 5px; padding: 0 20px; -webkit-appearance: none; -moz-appearance:none; appearance:none; background-image: url(../images/down-arrow.png); background-repeat: no-repeat; background-position: 90% center; font-weight:500;}
 .select_sec .select_box.ads select{padding-left:35px;}
 .select_sec .select_box.ads{position: relative; float: left;}
-.select_sec .ads:before{content:""; background: url('../images/ads.png'); width:24px; height:20px; top: 10px;
-  left: 10px; position: absolute;}
+.select_sec .ads:before{content:""; background: url('../images/ads.png'); width:24px; height:20px; top: 10px; left: 10px; position: absolute;}
+
+.chart{width:100%; float: left;}
+.chart h2{color:#3D4955; margin-bottom: 35px; font-size: 30px; font-weight:700;}
+.chart_sec{background:#fff; box-shadow: 0 0 8px rgb(0 0 0 / 10%); border-radius:5px; padding:30px 10px; margin-bottom: 50px;}
+.chart_sec h3{font-size: 24px; font-weight: 600; color:#3D4955; padding: 0 0 10px 15px;}
+.apexcharts-toolbar{display:none !important;}
+.apexcharts-text tspan{ font-family: 'Montserrat', sans-serif !important; font-size:13px;}
+
+@media (min-width:1460px){
+  .container{max-width: 1640px;}
+  }
+  
+  @media (max-width:1459px){
+  header ul li a{font-size:20px;}
+  .cost_sec ul{padding:18px 30px;}
+  .cost_sec ul li{font-size: 18px;}
+  .cost_sec ul li b{margin-left:10px;}
+  .select_sec .select_box{width:48%;}
+  .main_mid .main_card h6{font-size:24px;}
+  .main_mid .main_card h3{font-size:34px;}
+  .main_mid .main_card p{font-size:18px;}
+  .main_mid .main_card{padding:30px;}
+  .performs_sec h1{font-size: 24px;}
+  header ul li:not(:last-child)::after{font-size:20px;}
+  .performs_sec .list li{padding: 0 0 30px 60px; font-size: 18px;}
+  .social_btn a{width:280px; font-size:18px; line-height:62px;}
+  }
+  
+  @media (max-width:1199px){
+  header ul li a {font-size: 18px;}
+  header ul li:not(:last-child)::after{font-size: 17px; margin: 0 5px 0 7px; top: -1px;}
+  header{padding:18px 0;}
+  .main{padding:30px 0;}
+  .cost_sec{width:100%;}
+  .cost_sec ul{padding:14px 20px;}
+  .cost_sec ul li{font-size: 16px;}
+  .select_sec select{font-size: 14px; padding:0 8px;}
+  .select_sec .select_box.ads select{padding-left: 29px;}
+  .main_mid{margin:30px 0;}
+  .main_mid .main_card{padding: 25px 20px;}
+  .main_mid .main_card h6{font-size: 20px;}
+  .main_card .icon{right: 25px; font-size: 24px;}
+  .main_mid .main_card h3{font-size: 30px;}
+  .main_mid .main_card p{font-size: 16px;}
+  .performs_sec h1{font-size: 20px;}
+  .performs_sec p{font-size: 16px;margin: 8px 0 20px;}
+  .performs_sec .list{padding:20px;}
+  .performs_sec .list li::before{width: 35px; height: 35px; font-size:16px; line-height: 34px;}
+  .performs_sec .list li{font-size:16px; padding:0 0 26px 60px;}
+  .social_btn a{width: 260px;font-size: 16px;line-height: 62px;}
+  .chart h2{margin-bottom: 25px; font-size: 28px;}
+  .chart_sec h3{font-size: 22px;}
+  }
+  
+  @media (max-width:991px){
+  .cost_sec{margin-bottom: 10px;}
+  .select_sec .select_box{width:220px;}
+  .social_btn a img{margin-right:4px;}
+  .social_btn a{width: 220px; font-size: 15px; line-height: 55px; margin: 0 2px;}
+  .chart h2{margin-bottom: 20px; font-size: 24px;}
+  .chart_sec{padding:20px 10px;}
+  }
+  
+  @media (max-width:767px){
+  header{padding: 15px 0;}
+  header ul li a{font-size: 16px;}
+  header ul li:not(:last-child)::after{font-size: 15px;}
+  .cost_sec ul{flex-wrap: wrap; padding:14px 20px 9px;}
+  .cost_sec ul li{width:100%; margin-bottom: 5px;}
+  .cost_sec ul li b{margin-left:0;}
+  .social_btn a{margin-bottom:10px;}
+  }
+  
+  @media (max-width:470px){
+  .select_sec .select_box{width:100%; margin-bottom:7px;}
+  header .container > div{width:100%; text-align:center; margin-bottom: 5px;}
+  .select_sec select{background-position:95% center;}
+  }
